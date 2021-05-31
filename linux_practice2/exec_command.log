@@ -1,0 +1,243 @@
+    1  exit
+    2  sudo yum -y groupinstall "development tools"
+    3  sudo yum -y install epel-release wget
+    4  sudo wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+    5  sudo rpm -Uvh remi-release-7.rpm
+    6  sudo yum -y install --enablerepo=remi-php72 php php-pdo php-mysqlnd php-mbstring php-xml php-fpm php-common php-devel php-mysql unzip
+    7  php -v
+    8  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+    9  php composer-setup.php
+   10  php -r "unlink('composer-setup.php');"
+   11  sudo mv composer.phar /user/local/bin/composer
+   12  sudo mv composer.phar /usr/local/bin/composer
+   13  composer -v
+   14  ls /
+   15  ls /usr
+   16  ls -l /
+   17  ls -a /
+   18  pwd
+   19  cd /vagrant
+   20  pwd
+   21  cd /vagrant
+   22  mkdir server_lesson && cd server_lesson
+   23  git init
+   24  touch first.txt
+   25  cd vagrant
+   26  cd /vagrant
+   27  mkdir -p sever_lesson/linux_practice/public
+   28  ls server_lesson server_lesson/linux_practice
+   29  pwd
+   30  cd /vagrant
+   31  cd /
+   32  cd ~
+   33  cd /vagrant
+   34  cd /home
+   35  cd /vagrant
+   36  pwd
+   37  cd /home/vagrant
+   38  ls /
+   39  cd /
+   40  cd /vagrant
+   41  ls /
+   42  mkdir vagrant
+   43  sido mkdir vagrant
+   44  sudo mkdir vagrant
+   45  cd /vagrant
+   46  pwd
+   47  mkdir -p sever_lesson/linux_practice/public
+   48  mkdir server_lesson && cd server_lesson
+   49  ls -l /vagrant
+   50  ls -l /
+   51  sudo chmod a+w /vagrant
+   52  mkdir server_lesson && cd server_lesson
+   53  ls -l/
+   54  ls -l /
+   55  git init
+   56  cd /vagrant
+   57  mkdir -p server_lesson/linux_practice/public
+   58  ls server_lesson server_lesson/linux_practice
+   59  cd /vagrant
+   60  touch server_lesson/linux_practice/public/index.php
+   61  ls server_lesson/linux_practice/public
+   62  cd /vagrant/server_lesson && ls
+   63  cd/vagrant/server_lesson/linux_practice/public
+   64  cd /vagrant/server_lesson/linux_practice/public
+   65  cp index.php index_bk.php
+   66  ls
+   67  cd vagrant/server_lesson/linux_practice
+   68  cd /vagrant/server_lesson/linux_practice
+   69  cp -r public tmp
+   70  ls ./ public tmp
+   71  cd /vagrant
+   72  mv server_lesson/linux_practice server_lesson/linux_practicel
+   73  mkdir linux_lesson2 linux_lesson3
+   74  ls
+   75  mv ./linux_practice2 ./server_lesson
+   76  mv ./linux_lesson2 ./linux_practice2
+   77  mv ./linux_practice2 ./server_lesson
+   78  mv ./linux_lesson3 ./linux_practice3
+   79  mv server_lesson/linux_practicel server_lesson/linux_practice1
+   80  cd /vagrant/server_lesson/linux_practice1/temp/
+   81  cd /vagrant/server_lesson/linux_practice1/tmp/
+   82  rm *_bk.php
+   83  cd /vagrant
+   84  rm server_lesson/first.txt
+   85  ls
+   86  ls ./server_lesson
+   87  ls
+   88  rm -r linux_practice3
+   89  ls
+   90  cd server_lesson
+   91  ls
+   92  cd ../
+   93  ls
+   94  cd /vagrant/server_lesson
+   95  echo '#サーバーレッスン' > README.md
+   96  echo '#linuxぷらくてぃす' >> README.md
+   97  echo'#------------------------' >> README.md
+   98  echo '#------------------------' >> README.md
+   99  cat README.md
+  100  cd /vagrant/server_lesson
+  101  viREADME.md
+  102  vi README.md
+  103  cd /vagrant
+  104  git add .
+  105  git status
+  106  cd server_lessomn
+  107  cd server_lesson
+  108  git status
+  109  ls
+  110  git add.
+  111  git add .
+  112  git commit -m 'README.md'
+  113  git remote add origin https://github.com/factpus/server_lesson.git
+  114  git remote -v
+  115  git pushorigin master
+  116  git push origin master
+  117  cd linux_practice2
+  118  touch gizumo{1..50}.md
+  119  ls
+  120  rm gizumo{1..50}.md
+  121  touch gizumo{01..50}.md
+  122  ls
+  123  mkdir trash
+  124  mv gizumo{20..40}.md ./trash
+  125  ls
+  126  touch .gitignore
+  127  vi .gitignore
+  128  git add /vagrant/server_lessen/
+  129  git add ../
+  130  git commit -m '.gitignore実装'
+  131  git push origin master
+  132  cd ../
+  133  vi README.md
+  134  git add .
+  135  git commmit
+  136  git commmit -m 'リドミ変更'
+  137  git commmit - 'リドミ変更'
+  138  git commmit  'リドミ変更'
+  139  git commmit 'リドミ変更'
+  140  git commit -m 'readme 変更'
+  141  git push origin master
+  142  histry 3
+  143  history 3
+  144  history 7
+  145  ls
+  146  cd linux_practice2
+  147  ls
+  148  cd /trash
+  149  cd trash
+  150  ls
+  151  cd ../
+  152  vi .gitignore
+  153  git add ../
+  154  git commit
+  155  git commit -m '.gitignore 修正'
+  156  git push origin master
+  157  vi .gitignore
+  158  git add ../
+  159  git commit 'ignore_up'
+  160  git push origin master
+  161  cd ../
+  162  git add .
+  163  git commit -m 'ignore_up'
+  164  git push origin master
+  165  git rm --cached path/to/file
+  166  git rm
+  167  git add .
+  168  git commit -m 'test'
+  169  git push origin master
+  170  ls
+  171  cd ./linux_practice2
+  172  ls
+  173  cd /trash
+  174  cd trash
+  175  ls
+  176  cd../
+  177  cd ../
+  178  vi .gitignore
+  179  git add ../
+  180  git commit -m 'test2'
+  181  git push origin master
+  182  git rm
+  183  git add ../
+  184  git commit -m 'test4'
+  185  git push origin master
+  186  cd ../
+  187  vi .gitignore
+  188  cd linux_practice2
+  189  vi .ignore
+  190  vi .gitignore
+  191  git rm
+  192  git add ../
+  193  git commit -m 'test5'
+  194  git push origin master
+  195  vi .gitignore
+  196  git rm
+  197  git add ../
+  198  git commit -m 'test6'
+  199  git push origin master
+  200  vi .gitignore
+  201  git rm .gitignore
+  202  vi .gitignore
+  203  ls
+  204  vi .gitignore
+  205  git add ../
+  206  git commit -m 'test6'
+  207  git push origin master
+  208  vi .gitignore
+  209  rm .gitignore
+  210  ls
+  211  cd trash
+  212  ls
+  213  pwd
+  214  rm gizumo2*.md
+  215  ls
+  216  git add .../
+  217  git add .
+  218  git commit -m 'test7'
+  219  git push origin master
+  220  ls
+  221  git status
+  222  git add .
+  223  git add -A
+  224  git add -A .
+  225  gitstatus
+  226  git status
+  227  git commit -m 'test8'
+  228  git push origin master
+  229  touch gizumo{20...29}.md
+  230  ls
+  231  rm gizumo{20...29}.md
+  232  ls
+  233  rm gizumo{20..29}.md
+  234  touch gizumo{20..29}.md
+  235  ls
+  236  git status
+  237  cd ../
+  238  vi .gitignore
+  239  git status
+  240  git add .
+  241  git commit -m 'いけるか？'
+  242  git push origin master
+  243  history 300 >> exec_command.log 
